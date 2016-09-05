@@ -1,0 +1,341 @@
+<article>
+  <header>
+    <img src='http://lorempixel.com/900/200/nature/8' />
+    <h1>A - Starting Classes</h1>
+    <p>This is the first of a three-part series introducing Object-Oriented Programming in C#.</p>
+  </header>
+  <section>
+    <h2>Overview</h2>
+    <p>This topic introduces some of the basic syntax and grammar surrounding Object-Oriented Programming in C#. The following C# keywords are introduced.</p>
+    <ul>
+      <li>public</li>
+      <li>class</li>
+      <li>static</li>
+      <li>string</li>
+      <li>void</li>
+      <li>return</li>
+      <li>namespace</li>
+    </ul>
+    <p>This topic will also introduce the following grammars, syntax and language constructs:</p>
+    <ul>
+      <li>Simple class declaration syntax (no members)</li>
+      <li>Simple class declaration syntax (with static methods)</li>
+      <li>Method overloading</li>
+      <li>Method declaration syntax (class methods, with the static keyword)</li>
+      <li>Parameter declaration (variable declaration) syntax</li>
+      <li>Class (static) method call syntax (with and without arguments)</li>
+      <li><mark>main</mark> function (entry point of program)</li>
+      <li>Console output</li>
+      <li>Simple string concatenation</li>
+      <li>C# as a case-sensitive language</li>
+      <li>Single-line, multi-line and XML comments</li>
+    </ul>
+
+    <h1>Daily LOGs</h1>
+    <p>The following daily LOGs are covered in this package.</p>
+    <h4>OOP Basics</h4>
+    <ul>
+      <li>Define the term "class" as used in OOP</li>
+      <li>Explain the purpose of classes in computer programs</li>
+      <li>Describe the primary keywords used in declaring a class</li>
+      <li>Define the term "method" and give an example</li>
+      <li>Create simple classes with methods only</li>
+      <li>Explain what is meant by "overloading"</li>
+      <li>Describe the syntax of a method declaration (aka, method implementation)</li>
+      <li>Explain how classes with identical names can be distinguished from each other</li>
+    </ul>
+    <h4>General Programming Concepts and Terms</h4>
+    <ul>
+      <li>Define the term "keyword" as it applies to programming languages</li>
+      <li>Define the term "identifier" as it applies to programming languages</li>
+      <li>Define the term "program statement" and identify how the computer recognizes a program statement</li>
+      <li>Define the term "syntax" as it applies to programming languages</li>
+      <li>Identify the entry point for every computer program</li>
+      <li>Perform simple output to the console using System.Console</li>
+      <li>Identify the basic structure of a simple C# program</li>
+      <li>Explain what is meant by a "driver"</li>
+      <li>Explain what is meant by a "case-sensitive" programming language</li>
+      <li>Explain what is meant by a "strongly-typed" programming language</li>
+      <li>Explain what "string concatenation" is and how it works</li>
+      <li>Define and distinguish the terms "argument" and "parameter"</li>
+      <li>Use single-line, multi-line and XML comments as a means of documenting code</li>
+      <li>List the four pieces of information to include in comments at the top of every source file</li>
+    </ul>
+
+    <h4>Intro to IDEs</h4>
+    <ul>
+      <li>Define the term "IDE" as it relates to software development tools</li>
+      <li>Define the terms "project" and "solution"</li>
+      <li>Identify the various parts of the IDE (Integrated Development Environment) used in this course</li>
+      <li>Create a new project in the IDE for this course</li>
+      <li>Create new source files in the IDE for this course</li>
+      <li>Add existing files to a project</li>
+    </ul>
+
+    <h2>Code Samples</h2>
+    <p>The following examples are used to illustrate this topic.</p>
+    <ul>
+      <li>Nothingness - This class represents the absolute minimum code required to code a class. Even though it's not a very "useful" class, it does provide and introduction to the ideas of classes, keywords and identifiers.</li>
+      <li>HelloWorld - This adaptation of the classic "Hello World" program illustrates static methods. This example includes and introduces the concept of a "driver".</li>
+      <li>Comments - This class is not really "functional", but is intended to illustrate the basic types of comments allowed in the programming language.</li>
+    </ul>
+
+    <h3>Nothingness</h3>
+    <code>TODO: Configure code</code>
+    <h3>HelloWorld</h3>
+    <code>TODO: Configure code</code>
+    <h3>Comments</h3>
+    <code>TODO: Configure code</code>
+
+    <h2>Student Review Exercises</h2>
+    <p>These review exercises allow you to practice concepts recently covered in this topic.</p>
+    <ol>
+      <li>Read the "What is a Computer Program?" article.</li>
+      <li>Do the following coding exercises
+        <ol>
+          <li>OuterSpace – This class is the simplest possible class (and, coincidentally, one of the most useless).</li>
+          <li>AnsweringMachine – The AnsweringMachine class provides a method to give an answer to an incoming phone call.
+Driver – This class is the driver for the AnsweringMachine class.</li>
+          <li>Salutation – This is the Salutation class that was previously demonstrated.
+HelloWorld_Driver – This class is the driver for the Salutation class.</li>
+        </ol>
+      </li>
+      <li>Review the article on the concepts for the LOGs for this topic.</li>
+    </ol>
+    <h3>OuterSpace</h3>
+    <p>This class is the simplest possible class (and, coincidentally, one of the most useless).</p>
+    <h4>Problem Statement:</h4>
+    <p>Create a class called OuterSpace. This class has no members at all (it is empty, like outer space). Add a multi-line comment at the beginning that should include your full name as the author of the class. Also make an XML comment for the class as a whole.</p>
+
+    <h3>AnsweringMachine</h3>
+    <p>The AnsweringMachine class provides a method to give an answer to an incoming phone call.</p>
+    <h4>Problem Statement:</h4>
+    <p>Create the AnsweringMachine class so that it can provide a default answer for an incoming phone call as well as a customizable answer. The methods should be named answer and they should return a String. There should be two methods in total, and both of them should be declared as static. The actual content of the default message can be whatever you choose, while the customizable method will receive a single String argument that has the name of the person receiving the message. Also create a driver that demonstrates the AnsweringMachine in a Console environment.</p>
+    <p>Use the following details to guide your solution.</p>
+    <h5>Method Detail</h5>
+    <dl>
+      <dt><code>public static string Answer()</code></dt>
+      <dd>Provides a standard default message for the answering machine. <b>Returns:</b> A String that instructs the caller to leave a message.</dd>
+
+      <dt><code>public static string Answer(string name)</code></dt>
+      <dd>Provides a customizable message for the answering machine. To use this method, supply a person's name, and this name will be incorporated into the message that is returned. For example: <code>System.Console.WriteLine(AnsweringMachine.Answer("Bob");</code>  <b>Parameters:</b> name - A String that is the name of the person being called. <b>Returns:</b> A String that instructs the caller to leave a message for the person with the supplied name.</dd>
+    </dl>
+
+    <h3>Salutation and HelloWorld_Driver</h3>
+    <p>In each of the single-line comments above a line of code, enter a phrase or sentence in English that describes what is done in that line of code.</p>
+    <h4>Salutation</h4>
+    <pre><code>// Instructions: Enter comments in each blank to describe the following code
+// _____________________________________________________
+namespace Topic.A.Exercises
+&#123;
+
+    // _____________________________________________________________________
+    public class Salutation
+    &#123;
+        // _________________________________________________________________
+        public static string Greeting()
+        &#123;
+            // _____________________________________________________________
+            return "Hello World!";
+        &#125; // end of Greeting()
+
+        // _________________________________________________________________
+        public static string Greeting(string name)
+        &#123;
+            // _____________________________________________________________
+            return "Hello " + name;
+        &#125; // end of Greeting(string)
+
+        // _________________________________________________________________
+        public static string Farewell()
+        &#123;
+            // _____________________________________________________________
+            return "So long!";
+        &#125; // end of Farewell()
+    &#125; // end of Salutation class
+&#125;</code></pre>
+
+    <h4>HelloWorld_Driver</h4>
+    <pre><code>// Instructions: Enter comments in each blank to describe the following code
+// _____________________________________________________
+namespace Topic.A.Exercises
+&#123;
+    // _____________________________________________________
+    public class HelloWorld_Driver
+    &#123;
+        // ________________________________________________________________________
+        public static void main(string[] args)
+        &#123;
+            // ____________________________________________________________________
+            System.Console.WriteLine(Salutation.Greeting());
+            // ____________________________________________________________________
+            System.Console.WriteLine(Salutation.Greeting("Bob"));
+            // ____________________________________________________________________
+            System.Console.WriteLine(); // print a blank line
+            // ____________________________________________________________________
+            System.Console.WriteLine(Salutation.Farewell());
+        &#125;
+    &#125;
+&#125;
+</code></pre>
+ 
+
+    <h2>LOG Review</h2>
+    <p>These are some very brief points regarding the concepts and skills listed in LOGs for this topic.</p>
+
+    <h4>OOP Basics</h4>
+    <ul>
+      <li>Define the term "class" as used in OOP
+        <ul>
+          <li>A class is a template that acts as the basis for creating objects and describes a) What it "looks like", and b) How it "works".</li>
+        </ul>
+      </li>
+      <li>Explain the purpose of classes in computer programs
+        <ul>
+          <li>Classes allow programmers to define their own complex data types, complete with their own internal data (fields) and behaviours (methods).</li>
+        </ul>
+      </li>
+      <li>Describe the primary keywords used in declaring a class
+        <ul>
+          <li>public/private – identifies whether the class is visible to other code; public means all other code can see this class, while private means</li>
+          <li>class – declares that this is a class definition (tells the compiler to interpret this as a new "classification" or "kind" of data type; that is, a complex )</li>
+        </ul>
+      </li>
+      <li>Define the term "method" and give an example
+        <ul>
+          <li>A method is a set of instructions that manipulate information.</li>
+        </ul>
+      </li>
+      <li>Create simple classes with methods only
+        <ul>
+          <li><em>Demonstrate your ability to meet this learning outcome guide by completing the related assignments.</em></li>
+        </ul>
+      </li>
+      <li>Explain what is meant by "overloading"
+        <ul>
+          <li>Overloading describes creating more than one method with the same method name (but different parameters) in the same class. Overloaded methods allow for alternate ways to perform the same general behaviour of an object or a class.</li>
+        </ul>
+      </li>
+      <li>Describe the syntax of a method declaration (aka, method implementation)
+        <ul>
+          <li>&hellip;</li>
+        </ul>
+      </li>
+      <li>Explain how classes with identical names can be distinguished from each other
+        <ul>
+          <li>Different classes can have identical names provided that they exist in different namespaces. (Namespaces help to prevent a "collision" or confusion on the part of a compiler when confronted with two or more classes with the same name.)</li>
+        </ul>
+      </li>
+    </ul>
+    <h4>General Programming Concepts and Terms</h4>
+    <ul>
+      <li>Define the term "keyword" as it applies to programming languages
+        <ul>
+          <li>A keyword is a special command or instruction that is part of (that is, built in to, or "intrinsic" to) a programming language. Keywords are "reserved" words, meaning that they cannot be used for other purposes, such as being a name of a class, a variable, or a method.</li>
+        </ul>
+      </li>
+      <li>Define the term "identifier" as it applies to programming languages
+        <ul>
+          <li>An identifier is a programmer-supplied name for some item, either a class name, a field or local variable, or a method.</li>
+        </ul>
+      </li>
+      <li>Define the term "program statement" and identify how the computer recognizes a program statement
+        <ul>
+          <li>A program statement is combination of keywords, identifiers, punctuation, and/or literal values that, together, represent a single "instruction" or "command" that a compiler can translate into executable code.</li>
+        </ul>
+      </li>
+      <li>Define the term "syntax" as it applies to programming languages
+        <ul>
+          <li>Syntax refers to the rules of a programming language that define how to combine keywords, identifiers, literal values, and other symbols to create specific instructions for a computer program.</li>
+        </ul>
+      </li>
+      <li>Identify the entry point for every computer program
+        <ul>
+          <li>Every computer program must supply a method called "main" as the method that the operating system will call (execute) to begin running the program.</li>
+        </ul>
+      </li>
+      <li>Perform simple output to the console using System.Console
+        <ul>
+          <li><em>Demonstrate your ability to meet this learning outcome guide by completing the related assignments.</em></li>
+        </ul>
+      </li>
+      <li>Identify the basic structure of a simple C# program
+        <ul>
+          <li>A C# program must consist of at least one class and have a single "main" method as the program’s entry point. Typically, a C# program will consist of a "driver" (the class that has the main method) and other classes used to represent objects (data) in the program.</li>
+        </ul>
+      </li>
+      <li>Explain what is meant by a "driver"
+        <ul>
+          <li>A "driver" is a method or set of methods that "run" or control the execution of a program; it’s responsibility is to direct and maintain the "lifetime" of a program, and makes use of classes and objects to achieve the purpose of the program. Every driver begins its execution in a method called "main" (which is the name given for the entry point for every computer program).</li>
+        </ul>
+      </li>
+      <li>Explain what is meant by a "case-sensitive" programming language
+        <ul>
+          <li>A case-sensitive language is one  where the compiler regards "identical" words as different if they differ only in their case. In other words, a case-sensitive language will regard two identifiers are distinct if the only difference is whether they are spelled with upper- or lower-case characters. For example, HelloWorld and Helloworld will be regarded as different because one has a capital "W" and the other has a lower-case "w".</li>
+        </ul>
+      </li>
+      <li>Explain what is meant by a "strongly-typed" programming language
+        <ul>
+          <li>A "strongly-typed" programming language is one that requires all variables or objects to always match or conform to whatever data type they were originally declared as. Some programming languages (such as C#Script) allow variables or objects to "change" their data type whenever a programmer wishes to use it for other purposes; strongly-typed languages do not allow variables to "change" the type of data they can store. Strongly-typed programming languages provide better security and make it more difficult for programmers to inadvertently corrupt, mangle or expose important data.</li>
+        </ul>
+      </li>
+      <li>Explain what "string concatenation" is and how it works
+        <ul>
+          <li>String concatenation is where two or more strings are "combined" to create a longer string; this is represented in C# by "adding" strings together. For example, given two literal strings whose values are "One" and "word", the result of "One" + "word" would be the string "Oneword".</li>
+        </ul>
+      </li>
+      <li>Define and distinguish the terms "argument" and "parameter"
+        <ul>
+          <li>A parameter is a variable declared in the parameter list of a method declaration; parameters are used to hold or capture information (values) that are sent or passed into the method. An argument is some value (either a literal value, a value stored in a variable, or some other value that comes from an "expression") that is sent (passed) into a method; arguments appear in the syntax of method calls.</li>
+        </ul>
+      </li>
+      <li>Use single-line, multi-line and XML comments as a means of documenting code
+        <ul>
+          <li><em>Demonstrate your ability to meet this learning outcome guide by completing the related assignments.</em></li>
+        </ul>
+      </li>
+      <li>List the four pieces of information to include in comments at the top of every source file
+        <ul>
+          <li>The file name, author, creation date, and purpose of the file.</li>
+        </ul>
+      </li>
+    </ul>
+
+    <h4>Intro to IDEs</h4>
+    <ul>
+      <li>Define the term "IDE" as it relates to software development tools
+        <ul>
+          <li>The acronym "IDE" stands for "Integrated Development Environment". An IDE brings together separate,  but complementary, software development tools that aide developers in creating computer programs. For example, most IDEs bring a sophisticated text editor together with file management tools, a compiler, a debugger, and a program execution environment, as well as other useful tools.</li>
+        </ul>
+      </li>
+      <li>Define the terms "project" and "solution"
+        <ul>
+          <li>A solution is a folder in which one or more projects can be managed and "kept together"; it is the "area" in which a developer can create projects. A project is as set of classes designed to achieve a particular purpose; a project may represent a complete program in and of itself, or may be a single component of a larger, more complex computer program.</li>
+        </ul>
+      </li>
+      <li>Identify the various parts of the IDE (Integrated Development Environment) used in this course
+        <ul>
+          <li>
+            <mark>[-- image here --]</mark>
+          </li>
+        </ul>
+      </li>
+      <li>Create a new project in the IDE for this course
+        <ul>
+          <li><em>Demonstrate your ability to meet this learning outcome guide by completing the related assignments.</em></li>
+        </ul>
+      </li>
+      <li>Create new source files in the IDE for this course
+        <ul>
+          <li><em>Demonstrate your ability to meet this learning outcome guide by completing the related assignments.</em></li>
+        </ul>
+      </li>
+      <li>Add existing files to a project
+        <ul>
+          <li><em>Demonstrate your ability to meet this learning outcome guide by completing the related assignments.</em></li>
+        </ul>
+      </li>
+    </ul>
+
+  </section>
+</article>

@@ -1,0 +1,341 @@
+<article>
+  <header>
+    <img src='http://lorempixel.com/900/200/nature/8' />
+    <h1>B - Starting Classes</h1>
+    <p>This is the first of a three-part series introducing Object-Oriented Programming in C#.</p>
+  </header>
+  <section>
+    <h2>Overview</h2>
+    <p>This topic introduces some of the basic syntax and grammar surrounding Object-Oriented Programming in C#. The following keywords are introduced. (Note that additional keywords from previous topics may also be present.)</p>
+    <ul>
+      <li>new</li>
+      <li>char</li>
+      <li>int</li>
+      <li>double</li>
+    </ul>
+    <p>This topic will also introduce the following grammars, syntax and language constructs. (Note that additional concepts from previous topics may also be present.)</p>
+    <ul>
+      <li>Method declaration syntax (instance methods)</li>
+      <li>Object instantiation</li>
+      <li>Instance method call syntax (with and without arguments)</li>
+      <li>Class Field declaration syntax (member variables)</li>
+      <li>Assignment statement syntax</li>
+      <li>Accessing public fields in objects (storing & retrieving values)</li>
+    </ul>
+    <p>Note that this package introduces the distinction between static and non-static methods. Static methods, also known as "class methods", are identified by the keyword static and must be qualified by the class name; for example, in the following method call Salutation is the name of the class and Greeting is a static method of that class.</p>
+    <pre><code>Salutation.Greeting()</code></pre>
+    <p>Non-static methods, also known as "instance methods", are identified by the absence of the static keyword and must be called by using an instance of the class (that is, an object). An example of calling an instance method would be</p>
+    <pre><code>app.Greeting()</code></pre>
+    <p>where the app is an instance of the Salutation class.</p>
+
+    <h3>Daily LOGs</h3>
+    <p>The following daily LOGs are covered in this package.</p>
+    <h4>OOP Basics</h4>
+    <ul>
+      <li>Define the term "object" as used in OOP</li>
+      <li>Describe the syntax of static and non-static method declarations</li>
+      <li>Compare and contrast the syntax for method declarations (implementations) vs. method calls (for both static and non-static methods)</li>
+      <li>Define the term "field" as used in OOP and give an example</li>
+      <li>Compare and contrast instance and class members, for both methods and fields</li>
+      <li>Identify the "member access operator" and explain it's purpose</li>
+      <li>Create (instantiate) objects</li>
+      <li>Distinguish between classes and objects in OOP</li>
+      <li>Explain what is meant by the phrase "type extensibility" and how classes represent "complex" data types in OOP</li>
+    </ul>
+    <h4>General Programming Concepts and Terms</h4>
+    <ul>
+      <li>List the three categories of simple information</li>
+      <li>Define the term "intrinsic data type"</li>
+      <li>Explain what an assignment statement is and how it works</li>
+      <li>Compare and contrast the three categories of simple information with the complex types of information which classes represent</li>
+      <li>Explain the advantages of using classes and objects instead of only using intrinsic data types</li>
+    </ul>
+
+
+    <h2>Code Samples</h2>
+    <p>The following examples are used to illustrate this topic.</p>
+    <ul>
+      <li>Salutation - This adaptation of the classic "Hello World" program illustrates instance methods. This example includes and introduces the concept of a "driver" and the idea of creating (instantiating) an object based on a class.</li>
+      <li>Person - This simple class illustrates and introduces the idea of fields (member variables) of a class. This example includes and introduces the idea of a driver. The driver also illustrates how a single class can be used to instantiate multiple, distinct objects.</li>
+      <li>Account - This simple class also illustrates fields. This example includes a driver.</li>
+      <li>Comments - This class continues the illustration of the kinds of comments allowed in the programming language. This class builds on the previous example by showing comments for fields as well as methods.</li>
+      <li>Student - This class introduces a slightly more complex class by offering more fields. This example includes two drivers. By using two drivers, this illustrates that separate "programs" can share/use the same class definition.
+        <ul>
+          <li>The first driver is a simple "test driver" to ensure that the class is "working". This introduces the student to the idea that it is necessary to "test" or prove that the code we are creating is valid.</li>
+          <li>The second driver illustrates how the a single class can act as the basis for creating many distinct objects.</li>
+        </ul>
+      </li>
+      <li>Employee + Company - These are other classes similar to the Person and Student classes. These classes, however, "share" a driver, illustrating the fact that any given "program" typically uses more than one class. In addition, this driver introduces the ToString() and Parse() methods of the DateTime class.</li>
+    </ul>
+
+    <h3>Salutation & Driver</h3>
+    <p>This adaptation of the classic "Hello World" program illustrates instance methods. This example includes and introduces the concept of a "driver" and the idea of creating (instantiating) an object based on a class.</p>
+    <code-quote>TODO: Configure Code-Quote</code-quote>
+
+    <h3>Person</h3>
+    <p>This simple class illustrates and introduces the idea of fields (member variables) of a class. This example includes and introduces the idea of a driver. The driver also illustrates how a single class can be used to instantiate multiple, distinct objects.</p>
+    <ul>
+      <li>Data Attributes of the Person class:
+        <ul>
+          <li>FirstName : String</li>
+          <li>LastName : String</li>
+          <li>Age : Integer</li>
+        </ul>
+      </li>
+    </ul>
+    <code-quote>TODO: Configure Code-Quote</code-quote>
+
+    <h3>Account</h3>
+    <p>This simple class also illustrates fields. This example includes a driver.</p>
+    <ul>
+      <li>Data Attributes of the Account class:
+        <ul>
+          <li>AccountNumber : Integer</li>
+          <li>Balance : Real</li>
+          <li>OverdraftLimit : Double</li>
+        </ul>
+      </li>
+    </ul>
+    <code-quote>TODO: Configure Code-Quote</code-quote>
+
+    <h3>Comments</h3>
+    <p>This class continues the illustration of the kinds of comments allowed in the programming language. This class builds on the previous example by showing comments for fields as well as methods.</p>
+    <code-quote>TODO: Configure Code-Quote</code-quote>
+
+    <h3>Student</h3>
+    <p>The Student class introduces a slightly more complex example by offering more fields.</p>
+    <ul>
+      <li>Data Attributes of the Student class:
+        <ul>
+          <li>Name : String</li>
+          <li>Gender : Character</li>
+          <li>StudentId : Integer</li>
+          <li>Program : String</li>
+          <li>GradePointAverage : Double</li>
+          <li>FullTime : Boolean</li>
+        </ul>
+      </li>
+    </ul>
+    <p>This example also includes two drivers. By using two drivers, this illustrates that separate "programs" can share/use the same class definition.</p>
+    <p>The first driver is a simple "test driver" to ensure that the class is "working". This introduces the student to the idea that it is necessary to "test" or prove that the code we are creating is valid.</p>
+    <p>The second driver illustrates how the a single class can act as the basis for creating many distinct objects.</p>
+    <code-quote>TODO: Configure Code-Quote</code-quote>
+
+    <h3>Employee & Company</h3>
+    <p>The Employee and Company classes are similar to the Person and Student classes.</p>
+    <ul>
+      <li>Data Attributes of the Employee class:
+        <ul>
+          <li>FirstName : String</li>
+          <li>LastName : String</li>
+          <li>SocialInsuranceNumber : Integer</li>
+          <li>YearlySalary : Real</li>
+          <li>EmploymentStartDate : Date</li>
+          <li>Gender : Character</li>
+        </ul>
+      </li>
+    </ul>
+    <code-quote>TODO: Configure Code-Quote</code-quote>
+    <ul>
+      <li>Data Attributes of the Company class:
+        <ul>
+          <li>Name : String</li>
+          <li>City : String</li>
+          <li>IsIncorporated : Boolean</li>
+          <li>BusinessStartDate : Date</li>
+          <li>NumberOfEmployees : Integer</li>
+          <li>GrossIncomeToDate : Real</li>
+        </ul>
+      </li>
+    </ul>
+    <code-quote>TODO: Configure Code-Quote</code-quote>
+    <p>In the following driver, the Employee and Company classes are both being used, illustrating the fact that any given "program" typically uses more than one class. In addition, this driver introduces the overloaded ToString() method in the DateTime class to improve the output of displaying dates and the Parse() method to convert a string representation of a date to an actual DateTime instance.</p>
+    <code-quote>TODO: Configure Code-Quote</code-quote>
+
+    <h2>Student Review Exercises</h2>
+    <p>These review exercises allow you to practice concepts recently covered in this topic.</p>
+    <ol>
+      <li>AnsweringMachine - Create the AnsweringMachine class so that it can provide a default answer for an incoming phone call as well as a customizable answer.</li>
+      <li>Account - Extend the Account class from the example to include more information. Specifically, include an AccountType:String, BankName:String, BranchNumber:Integer, and InstitutionNumber:Integer.</li>
+      <li>CanadianAddress - Create the CanadianAddress class so that it can represent the majority of possible addresses that some place may have in Canada.</li>
+      <li>Course - Create the Course class so that it represents a post-secondary course.</li>
+      <li>ExamResult - Create the ExamResult class so that it represents the results of an exam written by a student.</li>
+      <li>LabResult - Create the labResult class so that it represents the results of a lab submitted by a student.</li>
+    </ol>
+
+    <h3>AnsweringMachine</h3>
+    <p>The AnsweringMachine class provides a method to give an answer to an incoming phone call.</p>
+    <h4>Problem Statement:</h4>
+    <p>Create the AnsweringMachine class so that it can provide a default answer for an incoming phone call as well as a customizable answer. The methods should be named answer and they should return a String. There should be two methods in total, and both of them should be declared as instance members (non-static). The actual content of the default message can be whatever you choose, while the customizable method will receive a single String argument that has the name of the person receiving the message.</p>
+    <p>Also create a driver that demonstrates the AnsweringMachine in a Console environment</p>
+    <p>Create a driver for the AnsweringMachine class that creates an instance of the class and displays the results of calling the answer methods.</p>
+
+    <h3>Account</h3>
+    <p>Extend the Account class from the example to include more information.</p>
+    <h4>Problem Statement:</h4>
+    <p>Extend the Account class from the example to include more information. Specifically, include an AccountType:String, BankName:String, BranchNumber:Integer, and InstitutionNumber:Integer.</p>
+    <p>Also modify the driver to make use of the added information.</p>
+    <h5>Notes</h5>
+    <p>The branch number and the institution number together make up the Transit Number for a bank. "The bank transit number is 8 digits long. This is divided into a 5 digit branch number and 3 digit institution code, for example 10000-200." (See <a href="http://en.wikipedia.org/wikiSort_code">http://en.wikipedia.org/wikiSort_code</a>)</p>
+    <p>For more information on bank accounts and transit numbers in Canada, see <a href="http://en.wikipedia.org/wiki/Routing_transit_number#Canadian_transit_number">http://en.wikipedia.org/wiki/Routing_transit_number#Canadian_transit_number</a>.</p>
+
+    <h3>CanadianAddress</h3>
+    <p>This class represents an address for some place in Canada.</p>
+    <h4>Problem Statement:</h4>
+    <p>Create the CanadianAddress class so that it can represent the majority of possible addresses that some place may have in Canada. Design the class to have only public fields, as specified in this document.</p>
+    <ul>
+      <li>Data Attributes of the CanadianAddress class:
+        <ul>
+          <li>Street : String</li>
+          <li>Unit : String</li>
+          <li>City : String</li>
+          <li>Province : String</li>
+          <li>PostalCode : String</li>
+          <li>RuralRoute : String</li>
+          <li>BoxNumber : String</li>
+        </ul>
+      </li>
+    </ul>
+    <p>Also create a driver for testing this class; you may use any name for the driver as long as it is not already mentioned in this package. In the driver, create instances of the CanadianAddress class that represent your current address as well as the address of your school (use hard-coded data).</p>
+
+    <h3>Course</h3>
+    <p>This class represents a post-secondary course with a theory (exam) and a lab portion.</p>
+    <h4>Problem Statement:</h4>
+    <p>Create the Course class so that it represents a post-secondary course. Design the class to have only public fields, as specified in this document.</p>
+    <ul>
+      <li>Data Attributes of the Course class:
+        <ul>
+          <li>CourseName : String</li>
+          <li>CourseNumber : String</li>
+          <li>ExamCount : Integer</li>
+          <li>LabCount : Integer</li>
+          <li>ClassHours : Integer</li>
+        </ul>
+      </li>
+    </ul>
+    <p>Also create a driver for testing this class; you may use any name for your driver as long as it is not already mentioned in this package. In the driver, instantiate all of the first term classes you are taking and populate those objects with data (use hard-coded data).</p>
+
+    <h3>EXamResult</h3>
+    <p>This class represents the results of an exam for a student.</p>
+    <h4>Problem Statement:</h4>
+    <p>Create the ExamResult class so that it represents the results of an exam written by a student. Design the class to have only public fields, as specified in this document.</p>
+    <ul>
+      <li>Data Attributes of the ExamResult class:
+        <ul>
+          <li>Name : String</li>
+          <li>TotalMarks : Integer</li>
+          <li>MarksEarned : Real</li>
+          <li>ExamWeight : Integer</li>
+          <li>StudentId : Integer</li>
+        </ul>
+      </li>
+    </ul>
+    <p>Also create a driver for testing this class; you may use any name for the driver as long as it is not already mentioned in this package. In the driver, instantiate all of the exams you have taken to date in this course and populate those objects with data (use hard-coded data).</p>
+
+    <h3>LabResult</h3>
+    <p>This class represents the results of an lab for a student.</p>
+    <h4>Problem Statement:</h4>
+    <p>Create the labResult class so that it represents the results of a lab submitted by a student. Design the class to have only public fields, as specified in this document.</p>
+    <ul>
+      <li>Data Attributes of the LabResult class:
+        <ul>
+          <li>LabNumber : Integer</li>
+          <li>TotalMarks : Integer</li>
+          <li>MarksEarned : Real</li>
+          <li>LabWeight : Integer</li>
+          <li>StudentId : Integer</li>
+        </ul>
+      </li>
+    </ul>
+    <p>Also create a driver for testing this class; you may use any name for the driver as long as it is not already mentioned in this package. In the driver, instantiate all of the labs you have submitted to date in this course and populate those objects with data (use hard-coded data).</p>
+
+    <h2>LOG Review</h2>
+    <p>These are some very brief points regarding the concepts and skills listed in LOGs for this topic.</p>
+    <h4>OOP Basics</h4>
+    <ul>
+      <li>Define the term "object" as used in OOP
+        <ul>
+          <li>An object is an instance of a class.</li>
+          <li>Each object has its own "state" (values) for its fields, and all objects based on any given class are distinct from each other. The internal values (state)for an object's fields can be changed independently of other objects of the same class.</li>
+        </ul>
+      </li>
+      <li>Describe the syntax of static and non-static method declarations
+        <ul>
+          <li>Static methods are "shared" by all instances (objects) of a class, and can be called without even having to have an instance of the method's class.</li>
+          <li>Non-static methods, on the other hand, can only be called for a given object (instance of a class) and will "act on" (or "act on behalf of") that object (and any other objects are not affected by the given object's method call).</li>
+        </ul>
+      </li>
+      <li>Compare and contrast the syntax for method declarations (implementations) vs. method calls (for both static and non-static methods)
+        <ul>
+          <li><mark>&hellip;</mark></li>
+        </ul>
+      </li>
+      <li>Define the term "field" as used in OOP and give an example
+        <ul>
+          <li>A field is a variable that belongs to a class and is shared by all the methods of a class.<br /> 
+              <pre><code>private static int sharedCount; // a static field</code></pre><br />
+              <pre><code>private string name; // an instance field</code></pre>
+          </li>
+        </ul>
+      </li>
+      <li>Compare and contrast instance and class members, for both methods and fields
+        <ul>
+          <li>Static methods are shared by all instances of a class, and can be called independently from instances of a class, whereas instance methods can only be called if you have an object (an instance of a class).</li>
+          <li>Static fields are shared by and fully accessible to all methods, but non-static fields, also called "instance" fields, are only shared by other non-static methods. In the following example, the first field is a static fields and the second is an instance field.</li>
+        </ul>
+      </li>
+      <li>Identify the "member access operator" and explain it's purpose
+        <ul>
+          <li>The member access operator (also called the "dot" operator) is the period. It is used to access a field or method of an object or a class.</li>
+        </ul>
+      </li>
+      <li>Create (instantiate) objects
+        <ul>
+          <li><em>Demonstrate your ability to meet this learning outcome guide by completing the related assignments.</em></li>
+        </ul>
+      </li>
+      <li>Distinguish between classes and objects in OOP
+        <ul>
+          <li>A class is merely a "template" for creating objects and describes a) what the object will "look like" (that is, what fields or data it will contain) and b) how the object works (that is, what methods can be called and what those methods will do).</li>
+        </ul>
+      </li>
+      <li>Explain what is meant by the phrase "type extensibility" and how classes represent "complex" data types in OOP
+        <ul>
+          <li>"Type extensibility" is where a programming language allows developers to create or design their own "data types".</li>
+          <li>All programming languages support the "simplistic" data types (for numeric information, such as whole and real numbers, as well as simple text or character representation). These simple data types are intrinsic ("build into") the programming language. A language that supports "type extensions" simply allows the programmer to create or design new data types; these new types are typically "complex" types made up of zero or more other (either simple or complex) data types.</li>
+        </ul>
+      </li>
+    </ul>
+    <h4>General Programming Concepts and Terms</h4>
+    <ul>
+      <li>List the three categories of simple information
+        <ul>
+          <li>Textual, numeric, and conceptual</li>
+        </ul>
+      </li>
+      <li>Define the term "intrinsic data type"
+        <ul>
+          <li>An "intrinsic data type" is one that is built into the programming language.</li>
+        </ul>
+      </li>
+      <li>Explain what an assignment statement is and how it works
+        <ul>
+          <li>An assignment statement is an instruction to the computer to store a value into a specific variable (or object). The variable (or object) is placed on the left-hand side of the equals sign, and the value to be stored in the object is placed on the right-hand side of the equals sign. The left-hand side of an assignment statement must be a single variable, whereas the right-hand side can be any expression as long as the resulting value of the expression is the same (or compatible) data type as the variable on the left-hand side.</li>
+        </ul>
+      </li>
+      <li>Compare and contrast the three categories of simple information with the complex types of information which classes represent
+        <ul>
+          <li>Simple information is either textual (such as a name), numeric (such as a total or count), or "conceptual" (that is, representing a more "abstract" value that is neither textual or numeric). An example of a textual type in C# is the <code>char</code> type. An example of a numeric type in C# is the <code>double</code> type. An example of a "conceptual" type is the <code>boolean</code> type. A variable whose type is one of the simple types can only hold a single, simple value at any given time.</li>
+          <li>Complex types of information can be constructed from many simple types or from simple and complex types. A "class" is used to describe or define what the complex type looks like and how it works.  Complex types are the basis for creating objects, and while any given "object variable" can only reference a single object, that object may consist of many distinct "values", each one being stored in a field that is "hidden" (or "encapsulated") inside the object.</li>
+        </ul>
+      </li>
+      <li>Explain the advantages of using classes and objects instead of only using intrinsic data types
+        <ul>
+          <li>By using objects, the programmer is no longer limited to having to only deal with simple values. By designing and using complex types (classes), the programmer is able to create complex programs using less code in a way that is simpler and more reliable than if the programmer were only allowed to use the simple types built into the programming language.</li>
+        </ul>
+      </li>
+    </ul>
+
+  </section>
+</article>
+
