@@ -3,3 +3,4 @@
 
 body { font-family: 'Open Sans', sans-serif;}
 h1, h2, h3 {font-family: 'Amaranth', sans-serif;}
+p {padding:5px 0; text-indent: 20px;}

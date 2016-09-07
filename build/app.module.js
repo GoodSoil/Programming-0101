@@ -26,7 +26,9 @@ AppModule = __decorate([
             index_1.ArticleWebsiteModule
         ],
         exports: [],
-        providers: [],
+        providers: [
+            index_1.LayoutConfigService
+        ],
         bootstrap: [app_component_1.AppComponent]
     }), 
     __metadata('design:paramtypes', [])

@@ -11,6 +11,7 @@
     '@angular':                   'https://npmcdn.com/@angular',
     'angular2-in-memory-web-api': 'https://npmcdn.com/angular2-in-memory-web-api',
     'rxjs':                       'https://npmcdn.com/rxjs',
+    'prismjs':                    'https://npmcdn.com/prismjs',
     '@dagilleland':               'https://npmcdn.com/@dagilleland',
   };
 
@@ -18,6 +19,7 @@
   var packages = {
     'app':                        { main: 'main.js',  defaultExtension: 'js' },
     'rxjs':                       { defaultExtension: 'js' },
+    'prismjs':                    { defaultExtension: 'js' },
     'angular2-in-memory-web-api': { defaultExtension: 'js' },
     '@dagilleland':               { main: 'index.js', defaultExtension: 'js' },
   };

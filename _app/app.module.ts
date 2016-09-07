@@ -4,7 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent }  from './app.component';
 // import { ArticleWebsiteModule } from '@dagilleland/article-website/article-website/article-website.module';
 // import { ArticleWebsiteModule } from './article-website/article-website.module';
-import { ArticleWebsiteModule } from '@dagilleland/article-website/index';
+import { ArticleWebsiteModule, LayoutConfigService } from '@dagilleland/article-website/index';
 import {HttpModule} from '@angular/http'
 
 // enableProdMode();
@@ -30,7 +30,7 @@ import {HttpModule} from '@angular/http'
   
   // Providers: A list of dependency injection providers.
   providers:    [
-    
+    LayoutConfigService
   ],
 
   // Bootstrap: A list of components that can be bootstrapped.
