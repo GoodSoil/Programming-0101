@@ -1,0 +1,18 @@
+{
+    "area": [
+        {"id": 1, "title": "Objects First"},
+        {"id": 2, "title": "Expressions and Flow Control"},
+        {"id": 3, "title": "Arrays & Collections"},
+        {"id": 2, "title": "I/O & Exceptions"}
+    ],
+    "pages": [
+        { "id": "1-a0", "areaId": 1, "version": "draft", "title": "What is a Computer Program?", "tooltip": "Foundational Concepts in Programming", "docPath": "docs/WhatIsAComputerProgram.html" },
+        { "id": "1-aa", "areaId": 1, "version": "draft", "title": "Starting with Classes - Part A", "tooltip": "Introductory OOP Concepts", "docPath": "docs/A - Starting Classes.html" },
+        { "id": "1-ab", "areaId": 1, "version": "draft", "title": "Starting with Classes - Part B", "tooltip": "Classes and Objects", "docPath": "docs/B - Starting Classes.html" },
+        { "id": "1-ac", "areaId": 1, "version": "draft", "title": "Starting with Classes - Part C", "tooltip": "", "docPath": "docs/C - Starting Classes.html" },
+        { "id": "1-ac", "areaId": 1, "version": "draft", "title": "The ABCs of Classes and Objects", "tooltip": "A Tutorial and Walk-Through of OOP Concepts", "docPath": "docs/A Tutorial - The ABCs of Classes and Objects.html" },
+
+        { "id": "2-aa", "areaId": 2, "version": "draft", "title": "About", "tooltip": "Overview of this template", "docPath": "docs/about/index.html" },
+        { "id": "2-ab", "areaId": 2, "version": "draft", "title": "Colophon", "tooltip": "Customizing the Site Styles", "docPath": "docs/about/colophon.html" }
+    ]
+}
